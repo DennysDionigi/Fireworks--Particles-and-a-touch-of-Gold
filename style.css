@@ -204,7 +204,7 @@ audio {
 label {
   z-index: 100;
   right: 2rem;
-  bottom: 3rem;
+  bottom: calc(3.5em + env(safe-area-inset-bottom));
   border-radius: 50%;
   height: 44px;
   width: 44px;
