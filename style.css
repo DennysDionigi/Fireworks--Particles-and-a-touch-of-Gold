@@ -204,7 +204,7 @@ label {
   position:absolute;
   z-index: 100;
   right: 2rem;
-  bottom: 8%;
+  bottom: calc(5ch - -5vh);
   border-radius: 50%;
   height: 44px;
   width: 44px;
