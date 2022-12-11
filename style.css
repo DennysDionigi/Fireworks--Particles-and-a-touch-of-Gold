@@ -99,7 +99,7 @@ html{
 
 body {
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
@@ -114,6 +114,7 @@ body {
   -ms-perspective: 1000;
   perspective: 1000;
   position:relative;
+  overflow:hidden
 }
 #snow {
   position: fixed;
@@ -142,7 +143,6 @@ body {
 }
 #fuori_artificio {
   width: 100vw;
-  max-height: 100svh;
   height:100vh;
   overflow: hidden;
 }
@@ -191,9 +191,9 @@ audio {
   width: 0;
 }
 label {
-  position:absolute;
+  position:fixed;
   z-index: 100;
-right: 4ch;
+right: calc(4ch - -2vh);
     bottom: 5em;
   border-radius: 50%;
   height: 44px;
@@ -239,7 +239,6 @@ input:checked ~ label {
 .container {
   opacity: 0;
   position: absolute;
-  inset:0;
   box-shadow: 0 0 0 200vmax #000;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
