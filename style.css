@@ -99,8 +99,9 @@ html{
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   height: -webkit-fill-available;
+  max-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +115,8 @@ body {
   -ms-perspective: 1000;
   perspective: 1000;
   position:relative;
-  overflow:hidden
+  overflow:hidden;
+    touch-action:none
 }
 #snow {
   position: fixed;
@@ -126,6 +128,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
+  touch-action:manipulation
 }
 #snow {
   background-color: #040b0e;
@@ -145,6 +148,7 @@ body {
   width: 100vw;
   height:100vh;
   overflow: hidden;
+  touch-action:manipulation
 }
 .albero {
   position: relative;
@@ -171,6 +175,7 @@ body {
   z-index: 2;
   padding: 2em;
   pointer-events: auto;
+  touch-action:manipulation;
   color: #fff;
 }
 .split-line {
@@ -199,6 +204,7 @@ right: calc(4ch - -2vh);
   height: 44px;
   width: 44px;
   cursor: pointer;
+  touch-action:manipulation
 }
 .audio_icon,
 [for="audio"] {
@@ -235,6 +241,7 @@ input:checked ~ label {
   justify-content: center;
   align-items: center;
   will-change:transform, scale;
+  touch-action:manipulation
 }
 .container {
   opacity: 0;
