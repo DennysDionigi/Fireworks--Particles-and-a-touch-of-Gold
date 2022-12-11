@@ -127,8 +127,7 @@ body {
   overflow:hidden;
   touch-action:manipulation
 }
-#snow,
-label {
+#snow{
   position: fixed;
 }
 #particles,
@@ -202,6 +201,7 @@ audio {
   width: 0;
 }
 label {
+  position:absolute;
   z-index: 100;
   right: 2rem;
   bottom: 8%;
