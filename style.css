@@ -234,6 +234,7 @@ input:checked ~ label {
 .container {
   opacity: 0;
   position: absolute;
+  inset:0;
   box-shadow: 0 0 0 200vmax #000;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
