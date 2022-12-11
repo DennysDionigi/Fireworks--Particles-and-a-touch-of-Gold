@@ -258,10 +258,11 @@ input:checked ~ label {
 }
 .container .box {
   position: relative;
-  block-size: min(48vh, 210px);
+  block-size: min(50vh, 220px);
   color: #fff;
   inline-size: min(50vmax, 80vw);
   border-radius: 5%;
+  padding:1ch
 }
 
 .confetti-button,
@@ -345,9 +346,10 @@ h2 {
   width: 140%;
   height: 100%;
   left: -20%;
-  z-index: -1000;
+  z-index: -1;
   transition: all ease-in-out 0.5s;
   background-repeat: no-repeat;
+  touch-action:none;
 }
 .confetti-button:before {
   display: none;
@@ -404,6 +406,12 @@ h2 {
   background-color: #e60074;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
+
+.confetti-button.animate:after,
+.confetti-button.animate:before{
+z-index:2
+}
+
 .confetti-button.animate:before {
   display: block;
   -webkit-animation: topBubbles ease-in-out 0.75s forwards;
