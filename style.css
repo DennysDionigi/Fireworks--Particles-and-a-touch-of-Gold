@@ -201,10 +201,10 @@ audio {
   width: 0;
 }
 label {
-  position:absolute;
+  position:fixed;
   z-index: 100;
   right: 2rem;
-  bottom: calc(5ch - -5vh);
+  bottom: calc(8ch - -5vh);
   border-radius: 50%;
   height: 44px;
   width: 44px;
