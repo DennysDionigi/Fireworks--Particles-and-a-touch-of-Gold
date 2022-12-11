@@ -88,37 +88,34 @@
 }
 :root {
   font-size: 2.25ch;
+  touch-action: manipulation;
+  height: 100% 
 }
 
-html{
-  width: 100%;
-  height: 100%;
-  height: -webkit-fill-available;
-  overflow:hidden;
+html {
+  display: block;
+  page-transition-tag: root;
 }
-
 body {
   width: 100%;
-  height: 100%;
-  height: -webkit-fill-available;
-  max-height: 100svh;
+  height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
   content-visibility: auto;
+  contain-intrinsic-size: 350px;
+  container-type: inline-size;
   transform: translateZ(0) translate3d(0, 0, 0);
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -ms-perspective: 1000;
   perspective: 1000;
-  position:relative;
-  overflow:hidden;
-    touch-action:none
 }
-#snow {
+#snow,
+label {
   position: fixed;
 }
 #particles,
@@ -128,7 +125,6 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  touch-action:manipulation
 }
 #snow {
   background-color: #040b0e;
@@ -146,9 +142,7 @@ body {
 }
 #fuori_artificio {
   width: 100vw;
-  height:100vh;
-  overflow: hidden;
-  touch-action:manipulation
+  height: 100vh;
 }
 .albero {
   position: relative;
@@ -175,7 +169,6 @@ body {
   z-index: 2;
   padding: 2em;
   pointer-events: auto;
-  touch-action:manipulation;
   color: #fff;
 }
 .split-line {
@@ -196,15 +189,15 @@ audio {
   width: 0;
 }
 label {
-  position:fixed;
   z-index: 100;
-right: calc(4ch - -2vh);
-    bottom: 5em;
+  right: 2rem;
+  bottom: 3rem;
   border-radius: 50%;
   height: 44px;
   width: 44px;
   cursor: pointer;
-  touch-action:manipulation
+  transform: translate3d(0, 0, 50vmin)
+    translate(0, calc((var(--index) * -100%) + (var(--index) * 30px)));
 }
 .audio_icon,
 [for="audio"] {
@@ -240,8 +233,6 @@ input:checked ~ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change:transform, scale;
-  touch-action:manipulation
 }
 .container {
   opacity: 0;
@@ -250,7 +241,7 @@ input:checked ~ label {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: 5;
-  scale: 0.8;
+  scale: 0.5;
 }
 .container .box {
   position: relative;
