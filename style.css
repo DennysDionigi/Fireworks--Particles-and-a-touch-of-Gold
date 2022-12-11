@@ -118,8 +118,7 @@ body {
   perspective: 1000;
   overflow:hidden
 }
-#snow,
-label {
+#snow {
   position: fixed;
 }
 #particles,
@@ -195,6 +194,7 @@ audio {
   width: 0;
 }
 label {
+  position:absolute;
   z-index: 100;
 right: 1.5em;
   bottom: 3em;
