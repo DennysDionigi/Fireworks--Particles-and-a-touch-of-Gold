@@ -204,7 +204,7 @@ label {
   position:fixed;
   z-index: 100;
   right: 2rem;
-  bottom: calc(8ch - -5vh);
+  top: 80%;
   border-radius: 50%;
   height: 44px;
   width: 44px;
