@@ -113,6 +113,13 @@ body {
   backface-visibility: hidden;
   -ms-perspective: 1000;
   perspective: 1000;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  overflow:hidden;
+  touch-action:manipulation
 }
 #snow,
 label {
