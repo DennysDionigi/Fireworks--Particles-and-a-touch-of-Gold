@@ -195,7 +195,7 @@ audio {
 label {
   z-index: 100;
 right: 1.5em;
-  top: calc(85% - -5vw);
+  bottom: 3em;
   border-radius: 50%;
   height: 44px;
   width: 44px;
