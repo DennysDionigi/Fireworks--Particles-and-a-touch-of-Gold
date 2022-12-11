@@ -230,7 +230,7 @@ input:checked ~ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change:transform;
+  will-change:transform, scale;
 }
 .container {
   opacity: 0;
@@ -240,7 +240,7 @@ input:checked ~ label {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   z-index: 5;
-  scale: 0.5;
+  scale: 0.8;
 }
 .container .box {
   position: relative;
