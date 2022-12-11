@@ -110,7 +110,7 @@ body {
   backface-visibility: hidden;
   -ms-perspective: 1000;
   perspective: 1000;
-  touch-action:none;
+  touch-action:manipulation;
   overflow:hidden
 }
 #snow,
@@ -189,8 +189,8 @@ audio {
 }
 label {
   z-index: 100;
-  right: 1rem;
-  bottom: 3rem;
+right: 1.5em;
+  top: calc(85% - -5vw);
   border-radius: 50%;
   height: 44px;
   width: 44px;
