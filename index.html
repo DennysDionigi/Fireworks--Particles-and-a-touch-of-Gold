@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
-<hea prefix="og: https://ogp.me/ns#"d>
+<head prefix="og: https://ogp.me/ns#">
 <meta charset="UTF-8">
 <title>Closing 2022 and Whishes</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui,shrink-to-fit=no,viewport-fit=cover">
@@ -490,8 +490,12 @@
 
   }
 
-}</script><link rel="stylesheet" href="./style.css">
-
+}</script>
+<link rel="stylesheet" href="./style.css">
+<link rel="preload" href="./style.css" as="style" />
+<link rel="preload" href="https://unpkg.co/gsap@3/dist/gsap.min.js" as="script" />
+<link rel="preload" href="./libs.js" as="script" />
+<link rel="preload" href="./script.js" as="script" />
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -629,7 +633,7 @@
 <script src='https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js'></script>
 <script src='https://unpkg.com/gsap@3/dist/EasePack.min.js'></script>
 <script src='https://cdn.jsdelivr.net/gh/CreateJS/EaselJS@ff1048658c9e5f19dacc020e4f3fc6c43a7b2a10/lib/easeljs-NEXT.min.js'></script>
-<script  src="./script.js"></script>
+<script  src="./script.js" type="module"></script>
 
 </body>
 </html>
