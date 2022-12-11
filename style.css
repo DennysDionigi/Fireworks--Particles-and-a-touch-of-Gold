@@ -255,6 +255,8 @@ input:checked ~ label {
   -webkit-backdrop-filter: blur(50px);
   z-index: 5;
   scale: 0.5;
+will-change: opacity, transform, visibility, 
+  contain: style;
 }
 .container .box {
   position: relative;
