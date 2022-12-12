@@ -283,6 +283,7 @@ input:checked ~ label {
   position: absolute;
   height: 100%;
   border: 5px solid hwb(41deg 9% 2%);
+  border-radius:1ch;
   filter: url(#wavy);
   -webkit-filter: url(#wavy);
 }
