@@ -256,12 +256,12 @@ input:checked ~ label {
 
 
 @media(max-width:480px) and (orientation:portrait){
-  .container{zoom:1.5}
+  .container{zoom:1.1;margin-top:-15ch}
 }
 
 .container .box {
   position: relative;
-  block-size: min(55vh, 220px);
+  block-size: min(50vh, 210px);
   background:var(--black_oklab);
   background:var(--black_lch);
   background:var(--black);
