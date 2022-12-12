@@ -307,7 +307,7 @@ input:checked ~ label {
   transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 .container .box .content {
-  position: absolute;
+  position: relative;
   padding: 20px;
   text-align: center;
   transition: 0.5s;
