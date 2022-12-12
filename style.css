@@ -125,7 +125,6 @@ body {
   right:0;
   bottom:0;
   overflow:hidden;
-  touch-action:manipulation
 }
 #snow{
   position: fixed;
@@ -253,10 +252,8 @@ input:checked ~ label {
   box-shadow: 0 0 0 200vmax #000;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-  z-index: 5;
-  scale: 0.5;
-will-change: opacity, transform;
-  contain: style;
+  z-index: 10;
+
 }
 .container .box {
   position: relative;
@@ -264,7 +261,7 @@ will-change: opacity, transform;
   color: #fff;
   inline-size: min(50vmax, 80vw);
   border-radius: 5%;
-  padding:1ch
+  padding:2ch
 }
 
 .confetti-button,
