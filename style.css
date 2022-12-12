@@ -262,12 +262,14 @@ input:checked ~ label {
 
 .container .box {
   position: relative;
-  block-size: min(50vh, 210px);
+  width: auto;
+  height: 100%;
+  padding: 1em;
+  background:var(--black);
   background:var(--black_oklab);
   background:var(--black_lch);
-  background:var(--black);
+  
   color: #fff;
-  inline-size: min(55vmax, 85vw);
 }
 
 .confetti-button,
