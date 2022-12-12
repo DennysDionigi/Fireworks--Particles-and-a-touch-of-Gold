@@ -470,8 +470,7 @@ a(function* () {
       if ((n.currentTime / n.duration) * 100 >= 13) {
         var e = document.querySelector(".hidden_sharewrapper");
 
-        gsap.to(e, { autoAlpha: 1, duration: 8 });
-        gsap.to(e, { scale: 1, duration: 0.3, delay: 0.1 });
+        gsap.to(e, { autoAlpha: 1, duration: 8, delay: 0.1 });
       }
     });
   })(),
