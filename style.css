@@ -295,6 +295,8 @@ input:checked ~ label {
   filter: url(#wavy);
   -webkit-filter: url(#wavy);
   overflow: visible;
+  z-index: 1;
+    pointer-events: none;
 }
 .container .box:before {
   top: -6px;
