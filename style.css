@@ -256,7 +256,7 @@ overflow: visible;
 
 
 @media(max-width:480px) and (orientation:portrait){
-  .container{zoom:1.1;margin-top:-15ch}
+  .container{zoom:1.1;margin-top:-5ch}
 }
 
 .container .box {
