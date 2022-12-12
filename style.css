@@ -251,7 +251,7 @@ input:checked ~ label {
   position: absolute;
   box-shadow: 0 0 0 200vmax var(--black);
   z-index: 10;
-
+overflow: visible;
 }
 
 
