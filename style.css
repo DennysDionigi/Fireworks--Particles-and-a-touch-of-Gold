@@ -264,7 +264,7 @@ input:checked ~ label {
   position: relative;
   width: auto;
   height: 100%;
-  padding: 1em;
+  padding: 2em;
   background:var(--black);
   background:var(--black_oklab);
   background:var(--black_lch);
@@ -310,7 +310,6 @@ input:checked ~ label {
 }
 .container .box .content {
   position: relative;
-  padding: 20px;
   text-align: center;
   transition: 0.5s;
 }
